@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<h3>کاری از شاهرخ اسکندری و میلاد کریم فرد</h3>
+<br />
+<h6>یه قالب آماده مخصوص بلیزور آماده کردیم خیلی عالیه اگر نیازش داری به 09393475117 تو واتس اپ پیام بده</h6>
+<br />
+<h3>@gotvandDate.SelectedPersianDate</h3>
+<h3>@gotvandDate.SelectedDateTime</h3>
+ 
+
+ 
+
+<GotvandDatePicker @ref="gotvandDate" SelectedDateTimeValueChanged="DateChange"></GotvandDatePicker>
+@code{
+    GotvandPersianDatePicker.GotvandDatePicker gotvandDate= new GotvandPersianDatePicker.GotvandDatePicker();
+    private void DateChange()
+    {
+        StateHasChanged();
+    }
+}
